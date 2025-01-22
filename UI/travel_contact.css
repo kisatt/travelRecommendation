@@ -1,0 +1,231 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+    background-image: url("https://wallpaperaccess.com/full/3599553.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#mask{
+    position: absolute;
+    top: 62px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0,128,107);
+    background: linear-gradient(94deg, rgba(0, 128, 107, 0.786) 0%, rgba(255,255,255,0) 70%);
+    z-index: 0;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+
+@media screen and (max-width: 1098px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+    }
+    .form{
+        width: 80%;
+    }
+
+}
+@media screen and (min-width: 1099px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+
+    }
+
+    .form{
+        width: 45%;
+    }
+}
+
+#navbar{
+    background-color: rgba(0, 0, 0, 0.805);
+    color: white;
+}
+.links{
+    padding: auto;
+    width: 20%;
+    font-weight: 600;
+}
+#navbar, .links ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10 0px 10 0px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width: 995px){
+    .links{
+        display: none;
+    }
+    .searchBar{
+        display:none;
+    }
+    #buttonMenu{
+        margin: 10px;
+    }
+    #menuPhone{
+        position: absolute;
+        z-index: 2;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: xx-large;
+        top: 54px;
+        right: 0;
+        line-height: 2;
+        width: 90%;
+        max-width: 420px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.805);
+    }
+}
+
+@media screen and (min-width: 996px){
+    #buttonMenu{
+        display: none;
+    }
+    #menuPhone{
+        display: none;
+    }
+    .links{
+        padding: auto;
+        width: 30%;
+        font-weight: 600;
+    }
+}
+
+.home-section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 95vh;
+    color: white;
+    z-index: 1;
+}
+
+.introduction{
+    padding-left: 10%;
+    width: 90%;
+}
+
+.introduction h1{
+    font-weight: bolder;
+    font-size: 4em;
+}
+
+.introduction p{
+    font-size: medium;
+    font-weight: 200;
+    width: 70%;
+}
+
+.introduction button{
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 128, 107, 0.862);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.social-media{
+    height: 90vh;
+    padding: 10px;
+}
+
+.social-media .line{
+    height: 35%;
+    border: 2px solid white;
+    width: 0;
+    margin:60px auto;
+}
+
+.social-media .social-links ul{
+    padding: 5px;
+    text-align: center;
+}
+
+.social-links li{
+    margin: 25px auto;
+    width: 100%;
+}
+
+.form{
+    padding: 2%;
+    max-width: 536px;
+}
+
+.form form{
+    background-color: rgba(0, 0, 0, 0.305);
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form input, .form textarea, .form label{
+    width: 90%;
+    margin: 10px;
+}
+
+.form button {
+    width: 91.5%;
+    margin:10px;
+}
+
+.form input , .form textarea{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: none;
+}
+
+.form button{
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 128, 107, 0.862);
+    padding: 7px;
+}

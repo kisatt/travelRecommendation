@@ -1,0 +1,308 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    margin: auto;
+    background-image: url("https://wallpaperaccess.com/full/3599553.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#mask{
+    position: absolute;
+    top: 52px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(0,128,107);
+    background: linear-gradient(94deg, rgba(0, 128, 107, 0.786) 0%, rgba(255,255,255,0) 70%);
+    z-index: 0;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+
+#navbar{
+    background-color: rgba(0, 0, 0, 0.805);
+    color: white;
+}
+
+@media screen and (max-width: 995px){
+    .links{
+        display: none;
+    }
+    .searchBar{
+        display:none;
+    }
+    #buttonMenu{
+        margin: 10px;
+    }
+    #menuPhone{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: xx-large;
+        top: 54px;
+        right: 0;
+        line-height: 2;
+        width: 90%;
+        max-width: 420px;
+        height: 400px;
+        background-color: rgba(0, 0, 0, 0.805);
+        z-index: 2;
+    }
+    .searchBarPhone{
+        margin: 20px 0 20px 0;
+        min-width: 350px;
+        padding: 0 10px 0 10px;
+    }
+    .searchBarPhone .containerButton{
+        position: absolute;
+        z-index: 3;
+        width: 130px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: -50px;
+        margin-left: 210px;
+    }
+    
+    .searchBarPhone button{
+        background-color: rgb(0, 128, 107);
+        color: white;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    .magnifying-glass{
+        margin-right: 5px;
+    
+    }
+}
+
+@media screen and (min-width: 996px){
+    #buttonMenu{
+        display: none;
+    }
+    #menuPhone{
+        display: none;
+    }
+    .links{
+        padding: auto;
+        width: 30%;
+        font-weight: 600;
+    }
+}
+#navbar, .links ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.searchBar{
+    min-width: 350px;
+    padding: 0 10px 0 10px;
+}
+.searchBar .containerButton{
+    position: relative;
+    z-index: 3;
+    width: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    margin-top: -30px;
+    margin-left: 190px;
+}
+
+.searchBar button{
+    background-color: rgb(0, 128, 107);
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.magnifying-glass{
+    margin-right: 5px;
+
+}
+
+.input, .inputPhone{
+    position: relative;
+    z-index: 2;
+    color: green;
+    margin: auto;
+    top: 7px;
+    right: 10px;
+    width: 330px;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+.inputPhone{
+    margin-left: 20px;
+}
+
+.home-section{
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 95vh;
+    width: 100%;
+    color: white;
+ }
+
+.introduction{
+    padding-left: 9%;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .introduction h1{
+        font-size:3em;
+        font-weight: bolder;
+        max-width: 557px;
+        width: 100%;
+    }    
+}
+
+@media screen and (min-width: 769px) {
+    .introduction h1{
+        font-weight: bolder;
+        font-size: 4em;
+        max-width: 557px;
+        width: 100%;
+    }
+}
+
+.introduction p{
+    font-size: medium;
+    font-weight: 200;
+    max-width: 413.50px;
+    width: 100%;
+}
+
+.introduction button{
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 128, 107, 0.862);
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+}
+
+.social-media{
+    height: 90vh;
+    padding: 10px;
+}
+
+.social-media .line{
+    height: 35%;
+    border: 2px solid white;
+    width: 0;
+    margin:60px auto;
+}
+
+.social-media .social-links ul{
+    padding: 5px;
+    text-align: center;
+}
+
+.social-links li{
+    margin: 25px auto;
+    width: 100%;
+}
+
+#Searchresult{
+    position: absolute;
+    right: 50px;
+    top: 90px;
+    width: 400px;
+}
+
+#list-result li{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 2px 7px black;
+    margin: 10px;
+}
+
+.top-bar{
+    width: 95%;
+    height: 20px;
+    border-radius: 50px;
+    margin: 10px;
+    background-color: rgba(0, 128, 107, 0.862)!important;
+}
+
+#list-result h4{
+    color: black;
+}
+
+#list-result p, #list-result h4, #list-result button{
+    padding: 5px 10px;
+}
+
+#list-result p{
+    font-size: small;
+    color: gray;
+    font-style: oblique;
+}
+
+#list-result button{
+    background-color: rgba(0, 128, 107, 0.862);
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.background-city {
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
